@@ -8,6 +8,16 @@ variable "vpc_name" {
   default = "Terraform-VPC"
 }
 
+variable "internet_gateway_name" {
+  type = string
+  default = "Terraform-Internet-Gateway"
+}
+
+variable "route_table_name" {
+  type = string
+  default = "Terraform-Route-Table"
+}
+
 variable "subnet_cidr_block" {
   type = string
   default = "172.172.0.0/24"
@@ -39,8 +49,8 @@ variable "network_interface_name" {
 variable "instance_ami" {
   type = map
   default = {
-    db_server  = "ami-0d058fe428540cd89"
-    web_server = "ami-055147723b7bca09a"
+    db_server  = "ami-0e5182fad1edfaa68"
+    web_server = "ami-0e5182fad1edfaa68"
   }
 }
 
